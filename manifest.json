@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Site Swatch",
+  "version": "0.0.1",
+
+  "description": "Group colors found in style sheets",
+  "icons": {},
+
+  "author": "Brandon Poe <brandonpoe@me.com>",
+
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "24": "images/icon24.png",
+      "32": "images/icon32.png"
+    },
+    "default_title": "Color Pallet",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

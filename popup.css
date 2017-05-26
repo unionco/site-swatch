@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    height: 500px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 220px;
+}
+
+body {
+    margin: 0;
+    overflow: auto;
+    padding: 0 10px 10px;
+}
+
+input[type="range"] {
+    display: block;
+    height: 20px;
+}
+
+label {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: -8px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+ul {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.control {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+}
